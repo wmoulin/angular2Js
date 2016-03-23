@@ -1,0 +1,28 @@
+
+<div class="panel panel-default">
+    <table class="striped highlight artists">
+      <thead>
+        <tr>
+          <td width="20%">ID</td>
+          <td >Name</td>
+          <td width="50px"></td>
+          <td width="50px"></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="#artist of artists" [class.light-blue.lighten-5]="artist === selectedArtist" [class.lighten-5]="artist === selectedArtist" (click)="onSelect(artist)">
+          <td>
+            <div class="chip">{{artist.id}}</div>
+          </td>
+          <td>{{artist.name}}</td>
+          <td>
+            <a class="btn-floating waves-effect waves-light" (click)="edit(artist)"><i class="material-icons left">create</i></a>
+          </td>
+          <td>
+            <a class="btn-floating waves-effect waves-light red darken-4" (click)="removeArtist(artist)"><i class="material-icons left">delete</i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<!-- my-artist-detail [my-artist]="selectedArtist"></my-artist-detail -->

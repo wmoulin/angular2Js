@@ -1,0 +1,9 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo center">Artist</a>
+    <ul class="left hide-on-med-and-down">
+      <li id="home" [ngClass]="{active: isActive('home')}"><a [routerLink]="['Home']" (click)="activate($event)">Home</a></li>
+      <li id="listAll" [ngClass]="{active: isActive('listAll')}"><a [routerLink]="['ListAll']" (click)="activate($event)">List All</a></li>
+    </ul>
+  </div>
+</nav>

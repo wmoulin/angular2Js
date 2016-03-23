@@ -1,0 +1,9 @@
+
+<div>
+  <ul *ngFor="#artist of artists">
+    <li>{{artist.name}}</li>
+    <ul *ngFor="#album of artist.albums">
+      <li>{{album.year}} {{album.name}}</li>
+    </ul>
+  </ul>
+</div>

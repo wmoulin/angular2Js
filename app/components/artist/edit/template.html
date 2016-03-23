@@ -1,0 +1,14 @@
+<div class="section">
+  <div class="row">
+    <div class="col s6">
+      <label for="input_name">Name</label>
+      <input id="input_name" type="text" placeholder="{{placeHolder}}" [(ngModel)]="artist.name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6">
+      <button *ngIf="artist.name" (click)="addArtist(artist)" type="button" class="btn">
+        <i class="material-icons left">add</i>Add {{artist.name}}</button>
+    </div>
+  </div>
+</div>

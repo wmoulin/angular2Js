@@ -1,0 +1,10 @@
+{
+  "javascript": {
+    "outdir" : "app",
+    "dir" : "",
+    "compile" : {
+      "presets": ["es2015", "stage-1"],
+      "plugins" : ["transform-es2015-modules-systemjs", "transform-decorators-legacy"]
+    }
+  }
+}
